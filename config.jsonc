@@ -101,6 +101,16 @@
     "keyColor": "green"
     },
     {
+    "type": "disk",
+    "key": "│ ├",
+    "keyColor": "green"
+    },
+    {
+    "type": "battery",
+    "key": "│ ├",
+    "keyColor": "green"
+    },
+    {
     "type": "uptime",
     "key": "│ └󰅐",
     "keyColor": "green"
