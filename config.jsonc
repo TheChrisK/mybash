@@ -105,6 +105,32 @@
     "key": "│ ├󰅐",
     "keyColor": "green"
     },
+
+    {
+    "type": "localip",
+    "format": "{ifname} {mac}",
+    "key": "☁ NETWORK",
+    "keyColor": "cyan"
+    },
+    {
+    "type": "localip",
+    "format": "{ipv4}",
+    "key": "│ ├",
+    "keyColor": "cyan",
+    "outputColor": "green"
+    },
+    {
+    "type": "publicip",
+    "key": "│ ├",
+    "keyColor": "cyan",
+    "outputColor": "red"
+    },
+    {
+    "type": "dns",
+    "key": "│ ├",
+    "keyColor": "cyan",
+    "outputColor": "blue"
+    },
     {
     "type": "sound",
     "key": " AUDIO",
