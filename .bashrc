@@ -4,7 +4,7 @@ iatest=$(expr index "$-" i)
 # SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
 #######################################################
 if [ -f /usr/bin/fastfetch ]; then
-	fastfetch
+	fastfetch --pipe false
 fi
 
 # Source global definitions
@@ -107,10 +107,21 @@ alias web='cd /var/www/html'
 # (Both commands done as root only.)
 
 #######################################################
-# GENERAL ALIAS'S
+# GENERAL ALIASES
 #######################################################
 # To temporarily bypass an alias, we precede the command with a \
 # EG: the ls command is aliased, but to use the normal ls command you would type \ls
+
+# MY CUSTOM ALIASES
+
+# Fastfetch shortcut
+alias ff='fastfetch --pipe false'
+
+# SSH key usage
+
+alias sshk='sudo ssh -i privkey '
+
+# DEFAULT ALIASES
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -134,7 +145,7 @@ alias ps='ps auxf'
 alias ping='ping -c 10'
 alias less='less -R'
 alias cls='clear'
-alias apt-get='sudo apt-get'
+alias dnf='sudo dnf'
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
 alias vi='nvim'
@@ -178,8 +189,10 @@ alias lls='ls -l'                 # List
 # alias chmod commands
 alias mx='chmod a+x'
 alias 000='chmod -R 000'
+alias 600='chmod -R 600'
 alias 644='chmod -R 644'
 alias 666='chmod -R 666'
+alias 700='chmod -R 700'
 alias 755='chmod -R 755'
 alias 777='chmod -R 777'
 
